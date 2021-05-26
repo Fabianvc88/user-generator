@@ -144,13 +144,13 @@ export default {
     position: relative;
     left: 12em;
     top: -8.5em;
-    }*/
-    .btn-generate{
+    }
+    .btn-generate{*/
     /*padding: 0.6em 2em;
     border-radius: 3px;
     color: whitesmoke;
-    background-color: rgb(65, 65, 65);*/
-    }
+    background-color: rgb(65, 65, 65);
+    }*/
     /*.btn-generate:hover{
     color: #D16C00;
     border-color: #D16C00;
