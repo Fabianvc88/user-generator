@@ -1,10 +1,10 @@
 <template>
     <v-container class="wrapper">
       <h2 class="mx-auto">Generator</h2>
-      <v-card class="mt-5 mb-8" elevation="1">
+      <v-card class="mt-1 mb-8" elevation="1" color="#fafafa">
         <v-card-text>
           <v-container>
-            <v-row>
+            <v-row no-gutters align="center" >
               <v-col xs="12" sm="4" offset-sm="2">
                 <img class="photo" v-bind:src="picture"/>
                 <h2 class="mt-5">{{firstName}} {{lastName}}</h2>
@@ -47,9 +47,8 @@
               </v-col>
             </v-row>
             <v-row>
-              <v-col>
+              <v-col class="ml-1" xs="12">
                 <v-btn
-                  class="ma-2"
                   tile
                   outlined
                   color="#244F59"
@@ -59,9 +58,9 @@
                   Generate
                 </v-btn>
               </v-col>
-              <v-col>
+              <v-col class="mr-1" xs="12">
                 <v-btn
-                  class="red white--text ma-2"
+                  class="light-blue darken-3 white--text"
                   tile
                   outlined
                 >
@@ -93,7 +92,7 @@ export default {
       email: 'johndoe@test.com',
       dob: undefined,
       age: '30',
-      cell: undefined,
+      cell: '(123)-456-7890',
     }
   },
   methods: {
@@ -101,6 +100,7 @@ export default {
       fetch('https://randomuser.me/api/')
       .then(res => res.json())
       .then(jres => {
+        /*info = jres.results[0];*/
         this.direccion = jres.results[0].location.street.number + " " + jres.results[0].location.street.name + ", " + jres.results[0].location.city;
         this.gender = jres.results[0].gender;
         this.firstName = jres.results[0].name.first;
@@ -157,7 +157,7 @@ export default {
     }*/
     table{
     font-family: arial, sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     border-collapse: collapse;
     min-width: 50%;
     }

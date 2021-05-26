@@ -1,9 +1,8 @@
 <template>
   <div class="home">
-    <v-parallax
-      dark
+    <!--v-parallax
       src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"
-    >
+    -->
       <v-row
         align="center"
         justify="center"
@@ -12,11 +11,10 @@
           class="text-center"
           cols="12"
         >
-          <Generator>
-          </Generator>
+          <Generator></Generator>
         </v-col>
       </v-row>
-    </v-parallax>
+    <!--/v-parallax-->
     <LinkFooter></LinkFooter>
   </div>
 </template>

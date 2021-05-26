@@ -41,10 +41,10 @@
     
     <v-app-bar
       app
-      color="#5296A5"
       dense
       flat
       dark
+      class="light-blue darken-3"
     >
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
 
