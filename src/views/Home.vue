@@ -1,18 +1,39 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <v-parallax
+      dark
+      src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"
+    >
+      <v-row
+        align="center"
+        justify="center"
+      >
+        <v-col
+          class="text-center"
+          cols="12"
+        >
+          <Generator>
+          </Generator>
+        </v-col>
+      </v-row>
+    </v-parallax>
+    <LinkFooter></LinkFooter>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import Generator from '../components/IdGenerator'
+import LinkFooter from '../components/LinkFooter'
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+    Generator,
+    LinkFooter,
   }
 }
 </script>
+
+<style scoped>
+
+</style>
